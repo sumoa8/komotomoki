@@ -356,29 +356,11 @@ body {
   font-size: 0.9rem;
 }
 
-/* 出版社向け */
-.publishers-section {
+/* 流れ */
+.process-section {
   background: #fff;
 }
 
-.publishers-grid {
-  display: grid;
-  gap: 1.5rem;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-}
-
-.publishers-block h3 {
-  font-size: 1rem;
-  margin: 0 0 0.5rem;
-}
-
-.publishers-block ul {
-  padding-left: 1.1rem;
-  margin: 0;
-  font-size: 0.9rem;
-}
-
-/* 流れ */
 .process-steps {
   list-style: none;
   padding: 0;
@@ -403,35 +385,6 @@ body {
 .process-steps p {
   font-size: 0.9rem;
   margin: 0;
-}
-
-/* お客様の声 */
-.testimonials-section {
-  background: #fffdf6;
-}
-
-.testimonials-grid {
-  display: grid;
-  gap: 1.25rem;
-  grid-template-columns: minmax(0, 1fr);
-}
-
-.testimonial-card {
-  background: var(--color-surface);
-  border-radius: var(--radius-md);
-  padding: 1.25rem;
-  box-shadow: var(--shadow-soft);
-  font-size: 0.95rem;
-}
-
-.testimonial-text {
-  margin: 0 0 0.75rem;
-}
-
-.testimonial-meta {
-  margin: 0;
-  font-size: 0.85rem;
-  color: var(--color-text-muted);
 }
 
 /* お知らせ */
@@ -529,7 +482,7 @@ select:focus,
 textarea:focus {
   outline: none;
   border-color: var(--color-primary);
-  box-shadow: 0 0 0 2px rgba(249,168,37,0.2);
+  box-shadow: 0 0 0 2px rgba(249, 168, 37, 0.2);
 }
 
 .form-actions {

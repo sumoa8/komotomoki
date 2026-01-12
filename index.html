@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>コモ トモキ｜イラストレーション ポートフォリオ</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="心がほかほか、少し驚く。本や紙面をあたたかく彩るイラストレーター・コモトモキのポートフォリオサイト。">
+  <meta name="description" content="心がほかほかする、日常のひとコマを。本やWebのそばにそっと置ける、あたたかくて少し驚きのあるイラストレーション。">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -12,12 +12,11 @@
     <div class="container header-inner">
       <div class="logo-area">
         <span class="site-title">Komo Tomoki Illustration</span>
-        <span class="site-tagline">心がほかほか、少し驚く一枚を。</span>
+        <span class="site-tagline">心がほかほかする、日常のひとコマを。</span>
       </div>
       <nav class="main-nav" aria-label="メインメニュー">
         <a href="#works">作品</a>
         <a href="#profile">プロフィール</a>
-        <a href="#for-publishers">出版社・編集の方へ</a>
         <a href="#process">ご依頼の流れ</a>
         <a href="#news">お知らせ</a>
         <a href="#contact" class="nav-highlight">お問い合わせ</a>
@@ -31,20 +30,37 @@
       <div class="container hero-inner">
         <div class="hero-text">
           <p class="hero-label">イラストレーター コモ トモキ</p>
-          <h1>本の世界を、<br>あたたかく驚きのある絵で彩ります。</h1>
-          <p class="hero-lead">
-            40〜50代の読者にもなじむ、やさしくてあたたかいトーンの中に、
-            ふっと心が動く「小さな驚き」を忍ばせたイラストを描いています。
-            エッセイや小説の挿絵、装画のご相談を中心に承っています。
-          </p>
+          <h1>心がほかほかする、<br>日常のひとコマを。</h1>
           <div class="hero-actions">
             <a href="#works" class="btn primary">代表作を見る</a>
             <a href="#contact" class="btn ghost">仕事の相談をする</a>
           </div>
         </div>
         <div class="hero-visual" aria-hidden="true">
-          <!-- ここにメインビジュアル（イラスト1点）を配置 -->
-          <div class="hero-visual-placeholder">メインイラスト</div>
+          <!-- ここにメインビジュアル（オムライスのイラスト）を配置 -->
+          <div class="hero-visual-placeholder">オムライスのイラスト</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- セカンドビュー：ナラティブな紹介セクション -->
+    <section id="intro" class="section intro-section">
+      <div class="container profile-inner">
+        <div class="profile-photo" aria-hidden="true">
+          <!-- ナラティブなイメージ用のエリア（例：机の上のスケッチや本など） -->
+          <div class="profile-photo-placeholder">イラストイメージ</div>
+        </div>
+        <div class="profile-text">
+          <h2>描いているものについて</h2>
+          <p>
+            文章や日常のひとコマに、ふっと心がほぐれるようなイラストを添えられたら──そんな思いで描いています。
+          </p>
+          <p>
+            やさしい色合いの中に、少しだけ驚きのあるワンシーンを忍ばせることを心がけてきました。
+          </p>
+          <p>
+            本・雑誌等の出版物の挿絵や、Webメディア等へのイラスト提供のご相談を承っています。
+          </p>
         </div>
       </div>
     </section>
@@ -55,7 +71,7 @@
         <header class="section-header">
           <h2>作品ポートフォリオ</h2>
           <p>
-            本の挿絵・装画を中心に、テイストの分かりやすい作品を抜粋して掲載しています。
+            本の挿絵・装画やWebメディア向けのカットなど、テイストの分かりやすい作品を抜粋して掲載しています。
             実績は随時更新しています。
           </p>
         </header>
@@ -63,12 +79,12 @@
         <!-- カテゴリフィルタ（静的でもOK、WPならターム連動も可能） -->
         <div class="works-filters" aria-label="作品カテゴリ">
           <button class="chip chip-active" type="button">すべて</button>
-          <button class="chip" type="button">本の挿絵</button>
+          <button class="chip" type="button">本・雑誌の挿絵</button>
           <button class="chip" type="button">装画</button>
-          <button class="chip" type="button">その他</button>
+          <button class="chip" type="button">Webメディア</button>
         </div>
 
-        <!-- ★ WP Loop: ここを「作品」投稿のループにする想定 -->
+        <!-- 代表作（常時表示） -->
         <div class="works-grid">
           <article class="work-card">
             <a href="#" class="work-link">
@@ -114,13 +130,44 @@
               </div>
             </a>
           </article>
-
-          <!-- 必要に応じてカードを増やし、WP導入時はここをループに差し替え -->
         </div>
 
+        <!-- LP内で完結させるための簡易アコーディオン -->
         <div class="works-cta">
-          <a href="#" class="btn secondary">作品一覧ページへ</a>
-          <a href="#" class="text-link">PDFポートフォリオをダウンロード</a>
+          <details class="works-accordion">
+            <summary class="btn secondary">その他の作品を見る</summary>
+            <div class="works-grid works-grid-more">
+              <article class="work-card">
+                <a href="#" class="work-link">
+                  <div class="work-thumb">
+                    <span class="work-thumb-placeholder">作品画像</span>
+                  </div>
+                  <div class="work-meta">
+                    <h3 class="work-title">窓ぎわのコーヒー</h3>
+                    <p class="work-tags">Webメディア / コラム挿絵</p>
+                    <p class="work-description">
+                      仕事や家事の合間にひと息つく時間をイメージした、Web記事向けのカットイラストです。
+                    </p>
+                  </div>
+                </a>
+              </article>
+
+              <article class="work-card">
+                <a href="#" class="work-link">
+                  <div class="work-thumb">
+                    <span class="work-thumb-placeholder">作品画像</span>
+                  </div>
+                  <div class="work-meta">
+                    <h3 class="work-title">夜更けの読みもの</h3>
+                    <p class="work-tags">エッセイ挿絵 / 夜のシーン</p>
+                    <p class="work-description">
+                      一日の終わりに本を開く、静かな時間の空気感を、やわらかな光と影で表現した一枚です。
+                    </p>
+                  </div>
+                </a>
+              </article>
+            </div>
+          </details>
         </div>
       </div>
     </section>
@@ -136,21 +183,13 @@
           <p class="profile-name">コモ トモキ<span class="profile-role">｜イラストレーター</span></p>
           <p>
             〇〇県在住。広告制作会社でデザイナーとして勤務後、フリーランスのイラストレーターとして活動。
-            「心がほかほかすること」「小さな驚きがあること」を大切に、本の挿絵や装画を中心に制作しています。
+            「心がほかほかすること」「小さな驚きがあること」を大切に、本やWebのそばに置けるイラストを制作しています。
           </p>
           <p>
             読者の多くが40〜50代となる一般書・実用書・エッセイなど、
             落ち着いたトーンの中に、ふっと目を留めたくなるような一枚をご提案します。
           </p>
           <div class="profile-grid">
-            <div class="profile-block">
-              <h3>得意な分野</h3>
-              <ul>
-                <li>エッセイ・コラムの挿絵</li>
-                <li>一般書・実用書の装画・カット</li>
-                <li>Web記事のイラスト・ヘッダー</li>
-              </ul>
-            </div>
             <div class="profile-block">
               <h3>画材・タッチ</h3>
               <ul>
@@ -159,55 +198,6 @@
                 <li>シンプルで読みやすい構図</li>
               </ul>
             </div>
-            <div class="profile-block">
-              <h3>これから挑戦したいこと</h3>
-              <ul>
-                <li>文芸書・エッセイの挿絵・装画</li>
-                <li>連載コラムの継続カット</li>
-                <li>書店で目に留まるシリーズ装画</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 出版社・編集の方へ（将来とりたい仕事に直結するセクション） -->
-    <section id="for-publishers" class="section publishers-section">
-      <div class="container">
-        <header class="section-header">
-          <h2>出版社・編集の方へ</h2>
-          <p>
-            本や紙媒体のお仕事を、特に積極的にお受けしています。
-            下記の条件・情報が分かると、スムーズにご提案が可能です。
-          </p>
-        </header>
-        <div class="publishers-grid">
-          <div class="publishers-block">
-            <h3>対応可能なジャンル</h3>
-            <ul>
-              <li>エッセイ・実用書・新書</li>
-              <li>一般向け文芸書</li>
-              <li>フリーペーパー・会報誌・小冊子</li>
-            </ul>
-          </div>
-          <div class="publishers-block">
-            <h3>ご相談時にいただきたい情報</h3>
-            <ul>
-              <li>書名（仮題でも可）、著者名</li>
-              <li>想定読者層・年代</li>
-              <li>判型・ページ数・色数</li>
-              <li>スケジュール（ラフ・決定稿・入稿日）</li>
-              <li>ご予算の目安</li>
-            </ul>
-          </div>
-          <div class="publishers-block">
-            <h3>納品形式</h3>
-            <ul>
-              <li>データ納品：PSD / PNG / TIFF / その他ご相談</li>
-              <li>解像度：300dpi以上（印刷に合わせて調整）</li>
-              <li>カラーモード：CMYK / RGB 応相談</li>
-            </ul>
           </div>
         </div>
       </div>
@@ -256,31 +246,12 @@
       </div>
     </section>
 
-    <!-- お客様の声・これまでのお取引（将来的に増やせる領域） -->
-    <section class="section testimonials-section">
-      <div class="container">
-        <header class="section-header">
-          <h2>これまでのお取引・お声</h2>
-          <p>許可をいただいた範囲で、順次掲載予定です。</p>
-        </header>
-        <div class="testimonials-grid">
-          <article class="testimonial-card">
-            <p class="testimonial-text">
-              （例）いつも、原稿の空気をふんわり受け止めてくださるような挿絵で、
-              40〜50代の読者の方からもご好評をいただいています。
-            </p>
-            <p class="testimonial-meta">— 編集者 A様（一般書・エッセイ）</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- お知らせ・更新情報（ブログやニュースに発展させられる領域） -->
+    <!-- お知らせ・更新情報 -->
     <section id="news" class="section news-section">
       <div class="container">
         <header class="section-header">
           <h2>お知らせ・近況</h2>
-          <p>新しい掲載情報や制作メモなどを、ゆるやかに更新していきます。</p>
+          <p>新しい掲載情報や展示のお知らせなどを、ゆるやかに更新していきます。</p>
         </header>
 
         <!-- ★ WP Loop: 通常投稿（ブログ）をここに表示 -->
@@ -315,7 +286,7 @@
           <h2>お問い合わせ</h2>
           <p>
             お仕事のご相談・ご質問などは、下記フォームよりお気軽にお送りください。
-            出版社・編集の方は、可能であれば「書名（仮）」「判型」「ページ数」「想定スケジュール」なども添えていただけますと、スムーズです。
+            本・雑誌等の出版物の挿絵や、Webメディア等へのイラスト提供についてのご相談も歓迎しています。
           </p>
           <p class="contact-note">
             ※2〜3営業日以内のご返信を心がけていますが、状況により前後する場合がございます。
@@ -343,8 +314,8 @@
             <label for="type">ご相談の種類</label>
             <select id="type" name="type">
               <option value="">選択してください</option>
-              <option value="book-illustration">本の挿絵・装画の相談</option>
-              <option value="magazine">雑誌・Webメディアの挿絵</option>
+              <option value="book-illustration">本・雑誌等の出版物の挿絵</option>
+              <option value="web-media">Webメディア等へのイラスト提供</option>
               <option value="other">その他のご相談</option>
             </select>
           </div>
@@ -366,7 +337,7 @@
     <div class="container footer-inner">
       <div class="footer-brand">
         <p class="footer-title">Komo Tomoki Illustration</p>
-        <p class="footer-copy">心がほかほか、少し驚く。そんな一枚をお届けします。</p>
+        <p class="footer-copy">心がほかほかする、日常のひとコマを。</p>
       </div>
       <div class="footer-links">
         <div class="footer-column">
@@ -374,7 +345,7 @@
           <ul>
             <li><a href="#works">作品</a></li>
             <li><a href="#profile">プロフィール</a></li>
-            <li><a href="#for-publishers">出版社・編集の方へ</a></li>
+            <li><a href="#process">ご依頼の流れ</a></li>
             <li><a href="#contact">お問い合わせ</a></li>
           </ul>
         </div>
